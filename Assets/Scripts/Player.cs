@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        StartCouroutine(KeepShooting());
     }
 
     void Update()
@@ -53,16 +54,25 @@ public class Player : MonoBehaviour
         // 移動角色位置
         controller.Move(dir * speed * Time.deltaTime);
 
-        // 射擊
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+        
             Fire();
-        }
+        
     }
 
     void Fire()
     {
         // 產生出子彈
         Instantiate(bulletPrefab, firePoint.transform.position, transform.rotation);
+    }
+    IEumerator KeepShooting()
+    {
+        while(true)
+        {
+            GameObject [] enemys = GameObject.FindGameObjectsWithTag("Enemy")
+            
+            
+            Fire();
+            yield return new WaitForSecond(0.5f);
+        }
     }
 }
