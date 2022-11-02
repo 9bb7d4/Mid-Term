@@ -18,9 +18,12 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Arrow")
+        if (other.tag == "Bullet")
         {
-            hp -= 25;
+            //先取得子彈攻擊力
+            Bullet bullet = other.GetComponent<Bullet>();
+
+            hp -= bullet.atk;
 
             if (hp <= 0)
             {
