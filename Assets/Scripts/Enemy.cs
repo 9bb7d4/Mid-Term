@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public float hp =  100;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +18,9 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name);
+        hp -= 25;
 
-        if (other.tag == "Arrow") 
+        if (hp <= 0) 
         {
             this.gameObject.SetActive(false);
             Destroy(this.gameObject);
