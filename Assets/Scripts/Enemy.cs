@@ -18,12 +18,16 @@ public class Enemy : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        hp -= 25;
-
-        if (hp <= 0) 
+        if (other.tag == "Arrow")
         {
-            this.gameObject.SetActive(false);
-            Destroy(this.gameObject);
+            hp -= 25;
+
+            if (hp <= 0)
+            {
+                this.gameObject.SetActive(false);
+                Destroy(this.gameObject);
+            }
         }
+       
     }
 }
