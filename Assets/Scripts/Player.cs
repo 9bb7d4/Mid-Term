@@ -96,13 +96,11 @@ public class Player : MonoBehaviour
     // 一直射擊的 Coroutine 函式
     IEnumerator KeepShooting()
     {
-        while (true)
+        while(true)
         {
-            // 射擊
             Fire();
-
-            // 暫停 0.5 秒
             yield return new WaitForSeconds(0.5f);
-        }
+        }   
+
     }
 }
