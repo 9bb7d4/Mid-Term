@@ -8,6 +8,7 @@ TagManager:
   - Arrow
   - Bullet
   - Lava
+  - Barrier
   layers:
   - Default
   - TransparentFX

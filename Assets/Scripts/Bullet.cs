@@ -26,5 +26,11 @@ public class Bullet : MonoBehaviour
             this.gameObject.SetActive(false);
             Destroy(this.gameObject);
         }
+        if (other.tag == "Barrier") 
+        {
+            this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
+        }
     }
+
 }
