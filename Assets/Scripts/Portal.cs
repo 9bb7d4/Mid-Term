@@ -16,11 +16,11 @@ public class Portal : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.name == "Player")
+        if (other.gameObject.name == "Player")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Level2");
         }
     }
 }
