@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Joystick joyStick;
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public float hp = 100;
 
     private CharacterController controller;
 
@@ -102,5 +103,14 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
         }   
 
+    }
+    
+    //如果碰到岩漿扣血
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Lava")
+        {
+            hp = hp - 5;
+        }
     }
 }
