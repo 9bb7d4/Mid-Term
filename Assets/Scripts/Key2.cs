@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Key : MonoBehaviour
+public class Key2 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class Key : MonoBehaviour
         {
             this.gameObject.SetActive(false);
             Destroy(this.gameObject);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 }
