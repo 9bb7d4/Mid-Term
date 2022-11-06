@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float hp =  100;
+    public float speed = 0.5f; 
     private GameObject focusPlayer;
     // Start is called before the first frame update
     void Start()
@@ -19,16 +20,16 @@ public class Enemy : MonoBehaviour
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
 
         float miniDist = 9999;
-        foreach (GameObject enemy in players)
+        foreach (GameObject player in players)
         {
             // 計算距離
-            float d = Vector3.Distance(transform.position, enemy.transform.position);
+            float d = Vector3.Distance(transform.position, player.transform.position);
 
             // 跟上一個最近的比較，有比較小就記錄下來
             if (d < miniDist)
             {
                 miniDist = d;
-                focusPlayer = enemy;
+                focusPlayer = player;
             }
         }
         
