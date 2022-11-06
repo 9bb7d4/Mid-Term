@@ -1001,7 +1001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!136 &988792945
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1265,6 +1265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6890982093996994014, guid: 9e2fc4172778247bdbc295bf4e68ef79, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e2fc4172778247bdbc295bf4e68ef79, type: 3}
 --- !u!1 &1160742735
@@ -1441,7 +1445,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337058729}
-  m_LocalRotation: {x: 0.2589383, y: 0.0033971341, z: -0.00091071485, w: 0.9658875}
+  m_LocalRotation: {x: 0.2589383, y: 0.0033971337, z: -0.0009107147, w: 0.9658875}
   m_LocalPosition: {x: -0.000000029802322, y: 6.2, z: -9.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1799,7 +1803,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556012587}
-  m_LocalRotation: {x: 0.2589383, y: 0.0033971341, z: -0.00091071485, w: 0.9658875}
+  m_LocalRotation: {x: 0.2589383, y: 0.0033971337, z: -0.0009107147, w: 0.9658875}
   m_LocalPosition: {x: -0.000000029802322, y: 6.2, z: -9.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2014,7 +2018,6 @@ GameObject:
   - component: {fileID: 1610621008}
   - component: {fileID: 1610621007}
   - component: {fileID: 1610621006}
-  - component: {fileID: 1610621005}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -2022,18 +2025,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1610621005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610621004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2555ef985e28ef4c810c623a061e1ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1610621006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2811,7 +2802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c734fa9c8ad3204689507accf938ee2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Key: {fileID: 170560, guid: cc5de5e674870ca479a40105f80555ad, type: 3}
+  Key: {fileID: 988792943}
 --- !u!65 &2105757182
 BoxCollider:
   m_ObjectHideFlags: 0
