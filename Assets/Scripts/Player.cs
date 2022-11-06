@@ -105,12 +105,5 @@ public class Player : MonoBehaviour
 
     }
     
-    //如果碰到岩漿扣血
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Lava")
-        {
-            hp = hp - 5;
-        }
-    }
+
 }
