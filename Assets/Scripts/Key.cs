@@ -18,7 +18,7 @@ public class Key : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Player")
+        if (other.tag == "Player")
         {
             Debug.Log("eeee");
             this.gameObject.SetActive(false);

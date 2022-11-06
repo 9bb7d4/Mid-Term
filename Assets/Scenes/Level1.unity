@@ -335,7 +335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2555ef985e28ef4c810c623a061e1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!1 &249256762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6890982093996994014, guid: 9e2fc4172778247bdbc295bf4e68ef79, type: 3}
@@ -1301,14 +1300,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237192899}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 8.540001, y: 0.1242998, z: 5.72}
-  m_LocalScale: {x: 0.25700206, y: 0.25700203, z: 0.25700212}
+  m_LocalRotation: {x: 0.25806013, y: 0.5802869, z: -0.74589974, w: 0.20076256}
+  m_LocalPosition: {x: 7.749125, y: 1.22, z: 5.72}
+  m_LocalScale: {x: 0.4523493, y: 0.45234928, z: 0.45234942}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 104.23599, y: 141.832, z: 0}
 --- !u!1 &1237192899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2194,7 +2193,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237192899}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.84
   m_Height: 6.95
