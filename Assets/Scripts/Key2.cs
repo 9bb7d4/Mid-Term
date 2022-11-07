@@ -23,7 +23,7 @@ public class Key2 : MonoBehaviour
         {
             this.gameObject.SetActive(false);
             Destroy(this.gameObject);
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(0);
         }
     }
 
