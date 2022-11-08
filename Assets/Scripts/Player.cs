@@ -19,9 +19,10 @@ public class Player : MonoBehaviour
 
         // 開始一直射擊的 Coroutine 函式
         StartCoroutine(KeepShooting());
+        StopCoroutine(KeepShooting());
     }
 
-    void Update()
+    public void Update()
     {
         // 找到最近的一個目標 Enemy 的物件
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
@@ -96,10 +97,12 @@ public class Player : MonoBehaviour
     // 一直射擊的 Coroutine 函式
     IEnumerator KeepShooting()
     {
+        
         while(true)
         {
             Fire();
             yield return new WaitForSeconds(0.5f);
+            
         }   
 
     }

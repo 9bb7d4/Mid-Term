@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Key : MonoBehaviour
+public class Coin : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -16,13 +15,12 @@ public class Key : MonoBehaviour
     {
         
     }
-     public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.name == "Player")
         {
             this.gameObject.SetActive(false);
             Destroy(this.gameObject);
-            SceneManager.LoadScene(2);
         }
     }
 }

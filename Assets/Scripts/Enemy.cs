@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float hp =  100;
-    public float speed = 0.5f; 
+    public GameObject target;
     private GameObject focusPlayer;
     // Start is called before the first frame update
     void Start()
@@ -73,6 +73,8 @@ public class Enemy : MonoBehaviour
             {
                 this.gameObject.SetActive(false);
                 Destroy(this.gameObject);
+                target.SetActive(false);
+                Destroy(target);
             }
         }
        
