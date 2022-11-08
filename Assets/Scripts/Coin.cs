@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    public GameObject target;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,12 +16,13 @@ public class Coin : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+   private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Player")
+        if (other.tag == "Player")
         {
             this.gameObject.SetActive(false);
             Destroy(this.gameObject);
+            target.SetActive(true);
         }
     }
 }

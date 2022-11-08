@@ -5,10 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - Arrow
   - Bullet
-  - Lava
   - Barrier
+  - Coin
   layers:
   - Default
   - TransparentFX
